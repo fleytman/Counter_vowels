@@ -5,9 +5,9 @@ import sys
 import locale
 
 def main():
-    glasn = [u'а', u'у', u'о', u'ы', u'и', u'э', u'я', u'ю', u'ё', u'е', u'А', u'У', u'О', u'Ы', u'И', u'Э', u'Я', u'Ю', u'Ё', u'Е']
-    soglasn = [u'б', u'в', u'г', u'д', u'ж', u'з', u'й', u'к', u'л', u'м', u'н', u'п', u'р', u'с', u'т', u'ф', u'х', u'ц', u'ч', u'ш', u'щ',u'Б', u'В', u'Г', u'Д', u'Ж', u'З', u'Й', u'К', u'Л', u'М', u'Н', u'П', u'Р', u'С', u'Т', u'Ф', u'Х', u'Ц', u'Ч', u'Ш', u'Щ']
-    graf = [u'ь',u'ъ',u'Ь',u'Ъ']
+    glasn = list(u'ауоыиэяюёеАУОЫИЭЯЮЁЕ')
+    soglasn = list(u'бвгджзйклмнпрстфхцчшщБВГДЖЗЙКЛМНПРСТФХЦЧШЩ')
+    graf = list(u'ьъЬЪ')
     if sys.stdin.encoding: encoding = sys.stdin.encoding
     else: encoding = locale.getdefaultlocale()[1]
     print u"Введите предложение 1"
